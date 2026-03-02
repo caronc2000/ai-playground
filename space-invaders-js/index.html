@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Invaders JS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="game-shell">
+    <header class="hud">
+      <h1>Space Invaders</h1>
+      <div class="stats">
+        <span>Score: <strong id="score">0</strong></span>
+        <span>Lives: <strong id="lives">3</strong></span>
+        <span>Level: <strong id="level">1</strong></span>
+      </div>
+    </header>
+
+    <canvas id="game" width="900" height="600" aria-label="Space Invaders game"></canvas>
+
+    <section class="controls">
+      <p id="status">Move: ← → or A/D • Shoot: Space • Restart: Enter</p>
+      <button id="restart" type="button">Restart</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
